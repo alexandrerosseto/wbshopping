@@ -1,4 +1,4 @@
-# Java EE - WebService - Spring Boot + JPA/Hibernate + H2 + PostgreSQL + Heroku
+# WebService using Spring Boot + JPA/Hibernate + H2 + PostgreSQL + Heroku
 
 It is an API that registers Users who can be authors of posts or/and comments of posts.
 
