@@ -3,6 +3,8 @@ package com.arosseto.wbshopping.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -45,9 +47,14 @@ public class UserService {
 	}
 	
 	public User update(Long idToFind, User userToBeUpdated) {
-		User entity = repository.getOne(idToFind);
-		updateData(entity, userToBeUpdated);
-		return repository.save(entity);
+		try {
+			User entity = repository.getOne(idToFind);
+			updateData(entity, userToBeUpdated);
+			return repository.save(entity);
+		}
+		catch (EntityNotFoundException e) {
+			throw new ResourceNotFoundException(idToFind);
+		}
 	}
 
 	private void updateData(User entity, User obj) {
