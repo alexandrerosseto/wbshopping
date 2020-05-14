@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.arosseto.wbshopping.entities.Product;
 import com.arosseto.wbshopping.repositories.ProductRepository;
+import com.arosseto.wbshopping.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class ProductService {
@@ -21,6 +22,6 @@ public class ProductService {
 	
 	public Product findById(Long id) {
 		Optional<Product> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 }
