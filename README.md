@@ -136,4 +136,5 @@ Please see [Spring-boot-mongodb](https://github.com/alexandrerosseto/spring-boot
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
+* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - To deploy on Heroku
 

@@ -1,6 +1,6 @@
 spring:
   profiles:
     active:
-    - test
+    - prd
   jpa:
     open-in-view: true
