@@ -1,6 +1,6 @@
 # WebService using Spring Boot + JPA/Hibernate + H2 + PostgreSQL + Heroku
 
-It is an API that registers Users who can be authors of posts or/and comments of posts.
+Webservice focused on manage shopping where is controlled clients, orders, order items, products, products category and payments.
 
 ## Author
 
