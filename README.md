@@ -130,7 +130,7 @@ Provisioning A PostgreSQL Database
 
 ## Running the tests
 
-This project is been released without JUnit tests because it was designed intended to show knowlegde related to the items described on the section Expectations.
+This project is being released without JUnit tests because it was designed intended to show knowlegde related to the items described on the section Expectations.
 
 Please see [Spring-boot-mongodb](https://github.com/alexandrerosseto/spring-boot-mongodb) to have a demonstration on how to use JUnit for integration tests.
 
